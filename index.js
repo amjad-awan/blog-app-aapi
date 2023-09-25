@@ -31,7 +31,7 @@ app.use(bodyParser.json());
 app.use("/api/v1/user", userRoute);
 app.use("/api/v1/blog", blogRoute);
 
-app.get("/",(req, res)=>{
+app.use("/",(req, res)=>{
   res.send("express api is here ")
 })
 
